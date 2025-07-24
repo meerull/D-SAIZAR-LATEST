@@ -105,6 +105,14 @@
                 <div class="clearfix"></div>
                 <br><br><br><br>
 
+				<div class="text-center" style="margin-top: 50px; margin-bottom: 30px;">
+				    <a href="generate-report.php" class="btn btn-success btn-lg">
+				        Generate Report
+				    </a>
+				</div>
+
+
+
             </div>
         </div>
         <!-- Main Content Setion Ends -->

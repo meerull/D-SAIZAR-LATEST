@@ -54,12 +54,32 @@ if(isset($_GET['soil_id'])) {
                 <div class="order-label" style="color:white;">Delivery Address</div>
                 <textarea name="delivery_address" class="input-responsive" required></textarea>
 
-                <div class="order-label" style="color:white;">Upload Payment Proof (image/pdf)</div>
-                <input type="file" name="payment_proof" class="form-control" accept=".jpg,.jpeg,.png,.pdf" required>
+            <div class="text-center mt-4">
+            <div class="order-label mb-2" style="color:white;">Scan this QR Code to Make Payment</div>
+            <div class="mb-3">
+                <img src="<?php echo SITEURL; ?>images/payment-qr.jpg" alt="QR Code for Payment" style="max-width: 250px; border: 2px solid #fff; border-radius: 8px;">
+            </div>
 
-                <br>
-                <input type="submit" name="submit_payment" value="Confirm Order & Upload Payment" class="btn btn-primary">
+            <div class="order-label mb-2" style="color:white;">Upload Payment Proof (image/pdf)</div>
+
+                    <div class="mb-4">
+                        <input 
+                            type="file" 
+                            name="payment_proof" 
+                            class="form-control mx-auto custom-file-input" 
+                            style="max-width: 300px; background-color: #fff; color: #000;" 
+                            accept=".jpg,.jpeg,.png,.pdf" 
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" name="submit_payment" class="btn btn-primary mt-3">
+                        Confirm Order
+                    </button>
+                </div>
             </fieldset>
+
+
         </form>
 
         <?php
