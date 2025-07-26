@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 24, 2025 at 07:05 AM
+-- Generation Time: Jul 26, 2025 at 03:08 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -90,19 +90,38 @@ CREATE TABLE `tbl_order` (
 --
 
 INSERT INTO `tbl_order` (`id`, `soil`, `price`, `qty`, `total`, `order_date`, `status`, `delivery_address`, `payment_id`, `u_id`) VALUES
-(19, 'Fine sand', 30.00, 1, 30.00, '2025-01-30 01:41:13', 'Ordered', '', 0, 25),
-(20, 'Fine sand', 30.00, 1, 30.00, '2025-01-30 10:01:59', 'Delivered', '', 0, 6),
-(21, 'Red Soil', 30.00, 3, 90.00, '2025-01-30 14:48:16', 'On Delivery', '', 0, 26),
-(22, 'Fine sand', 30.00, 5, 150.00, '2025-02-01 15:28:14', 'Delivered', '', 0, 36),
-(23, 'Red Soil', 30.00, 1, 30.00, '2025-07-05 16:11:15', 'Ordered', '', 0, 39),
-(24, 'Small Rock', 45.00, 1, 45.00, '2025-07-05 16:46:16', 'Ordered', '', 0, 39),
-(25, 'Red Soil', 30.00, 1, 30.00, '2025-07-05 18:29:36', 'Ordered', '', 0, 39),
-(26, 'Red Soil', 30.00, 1, 30.00, '2025-07-05 18:33:09', 'Ordered', '', 0, 39),
-(27, 'Red Soil', 30.00, 1, 30.00, '2025-07-12 20:21:12', 'Ordered', '', 0, 39),
-(28, 'Fine sand', 30.00, 1, 30.00, '2025-07-12 21:05:25', 'Ordered', 'testing final', 2, 39),
-(29, 'Red Soil', 30.00, 1, 30.00, '2025-07-17 10:05:58', 'Ordered', 'testing before consult', 3, 39),
-(30, 'Fine sand', 30.00, 1, 30.00, '2025-07-17 11:23:13', 'Ordered', 'testttt', 4, 39),
-(31, 'Fine sand', 30.00, 1, 30.00, '2025-07-17 11:30:43', 'Delivered', 'testing', 5, 39);
+(32, 'Red Soil', 30.00, 3, 90.00, '2025-07-26 02:22:41', 'Ordered', 'Jalan Bukit Kubu, Perlis', 0, 40),
+(33, 'Fine sand', 30.00, 2, 60.00, '2025-07-26 02:22:41', 'On Delivery', 'Taman Melati, Kangar, Perlis', 0, 41),
+(34, 'Small Rock', 45.00, 1, 45.00, '2025-07-26 02:22:41', 'On Delivery', 'Kampung Titi Tok Bandar, Perlis', 0, 42),
+(35, 'Limestone', 50.00, 4, 200.00, '2025-07-26 02:22:41', 'Cancelled', 'Jalan Sekolah, Kangar, Perlis', 0, 43),
+(36, 'Top Soil', 40.00, 2, 80.00, '2025-07-26 02:22:41', 'Cancelled', 'Taman Sena Indah, Perlis', 0, 44),
+(37, 'clay sand', 35.00, 1, 35.00, '2025-07-26 02:22:41', 'Ordered', 'Jalan Raja Syed Alwi, Perlis', 0, 45),
+(38, 'Red Soil', 30.00, 5, 150.00, '2025-07-26 02:22:41', 'Ordered', 'Taman Bukit Kayangan, Perlis', 0, 46),
+(39, 'Fine sand', 30.00, 2, 60.00, '2025-07-26 02:22:41', 'On Delivery', 'Jalan 9, Arau, Perlis', 0, 47),
+(40, 'Small Rock', 45.00, 3, 135.00, '2025-07-26 02:22:41', 'Ordered', 'Taman Mutiara, Perlis', 0, 48),
+(41, 'Red Soil', 30.00, 2, 60.00, '2025-07-26 02:22:41', 'Ordered', 'Jalan Padang Siding, Perlis', 0, 49),
+(42, 'Big Rock', 30.00, 1, 30.00, '2025-07-26 02:22:41', 'Cancelled', 'Taman Pertiwi Indah, Perlis', 0, 50),
+(43, 'Top Soil', 40.00, 3, 120.00, '2025-07-26 02:22:41', 'Cancelled', 'Jalan Seriab, Perlis', 0, 51),
+(44, 'Fine sand', 30.00, 4, 120.00, '2025-07-26 02:22:41', 'On Delivery', 'Jalan Kuala Perlis, Perlis', 0, 52),
+(45, 'Limestone', 50.00, 1, 50.00, '2025-07-26 02:22:41', 'Ordered', 'Taman Pelangi, Perlis', 0, 53),
+(46, 'clay sand', 35.00, 3, 105.00, '2025-07-26 02:22:41', 'Cancelled', 'Jalan Jejawi, Perlis', 0, 54),
+(47, 'Red Soil', 30.00, 1, 30.00, '2025-07-26 02:22:41', 'Ordered', 'Taman Damai, Perlis', 0, 55),
+(48, 'Fine sand', 30.00, 1, 30.00, '2025-07-26 02:22:41', 'Cancelled', 'Kampung Titi Serong, Perlis', 0, 56),
+(49, 'Small Rock', 45.00, 2, 90.00, '2025-07-26 02:22:41', 'Ordered', 'Jalan Beseri, Perlis', 0, 57),
+(50, 'Top Soil', 40.00, 2, 80.00, '2025-07-26 02:22:41', 'Ordered', 'Taman Wawasan, Perlis', 0, 58),
+(51, 'Limestone', 50.00, 1, 50.00, '2025-07-26 02:22:41', 'On Delivery', 'Taman Intan, Perlis', 0, 59),
+(52, 'Red Soil', 30.00, 3, 90.00, '2025-07-26 02:22:41', 'Ordered', 'Jalan Padang Behor, Perlis', 0, 60),
+(53, 'Fine sand', 30.00, 1, 30.00, '2025-07-26 02:22:41', 'Ordered', 'Kampung Titi Tok Bandar, Perlis', 0, 61),
+(54, 'clay sand', 35.00, 4, 140.00, '2025-07-26 02:22:41', 'Cancelled', 'Jalan Repoh, Perlis', 0, 62),
+(55, 'Top Soil', 40.00, 3, 120.00, '2025-07-26 02:22:41', 'Cancelled', 'Taman Kemajuan, Perlis', 0, 63),
+(56, 'Big Rock', 30.00, 2, 60.00, '2025-07-26 02:22:41', 'On Delivery', 'Taman Melati, Perlis', 0, 64),
+(57, 'Fine sand', 30.00, 3, 90.00, '2025-07-26 02:22:41', 'Cancelled', 'Taman Sena, Perlis', 0, 65),
+(58, 'Limestone', 50.00, 1, 50.00, '2025-07-26 02:22:41', 'Ordered', 'Taman Berlian, Perlis', 0, 66),
+(59, 'clay sand', 35.00, 2, 70.00, '2025-07-26 02:22:41', 'Ordered', 'Jalan Santan, Perlis', 0, 67),
+(60, 'Top Soil', 40.00, 1, 40.00, '2025-07-26 02:22:41', 'On Delivery', 'Taman Perlis Jaya, Perlis', 0, 68),
+(61, 'Red Soil', 30.00, 2, 60.00, '2025-07-26 02:22:41', 'Ordered', 'Jalan Pauh, Perlis', 0, 69),
+(62, 'Red Soil', 30.00, 1, 30.00, '2025-07-26 10:32:31', 'Delivered', 'Kampung Padang Nyu, 02600 Arau, Perlis', 6, 70),
+(63, 'Top Soil', 40.00, 2, 80.00, '2025-07-26 10:47:04', 'Delivered', 'Kg Arau, 16010 Kangar, Perlis', 7, 71);
 
 -- --------------------------------------------------------
 
@@ -122,11 +141,8 @@ CREATE TABLE `tbl_payment` (
 --
 
 INSERT INTO `tbl_payment` (`payment_id`, `payment_date`, `payment_time`, `payment_prove`) VALUES
-(1, '2025-07-12', '20:21:12', 0x61646d696e2e706e67),
-(2, '2025-07-12', '21:05:25', 0x494d533635352050726f6772657373204d6f6e69746f72696e6720666f726d2e706466),
-(3, '2025-07-17', '10:05:58', 0x7061796d656e742d71722e706e67),
-(4, '2025-07-17', '11:23:13', 0x696d6167652e6a7067),
-(5, '2025-07-17', '11:30:43', 0x62672e6a7067);
+(6, '2025-07-26', '10:32:31', 0x526563656970742d42616e6b2d52616b7961745f32303235303732363032333134393738362e706466),
+(7, '2025-07-26', '10:47:04', 0x576861747341707020496d61676520323032352d30372d32362061742031302e34362e31325f34656635626566662e6a7067);
 
 -- --------------------------------------------------------
 
@@ -180,11 +196,38 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `customer_name`, `customer_email`, `customer_contact`, `customer_address`, `created_at`) VALUES
-(35, 'rayyan', '$2y$10$Gy6aUbgcfidoBL5TlfHyMu8IORap1nBg60Q1sqh/Hnf32dyPewqIa', 'mohd rayyan', 'rayyan@gmail.com', 9526519828, 'perlis', '2024-11-12 17:20:06'),
-(36, 'adham', '$2y$10$ViiTNdK7o2PDAXE0BjUHnOReE6CA91gjxU6v/XB402NJiZzvr7JMO', 'AHMAD ADHAM BIN MOHD SAIFI', 'adham@gmail.com', 9038394034, 'Machang, Kelantan', '2024-11-12 18:48:54'),
-(37, 'AIMAN', '$2y$10$faixVpekjH7qyog4CsSD7u/KdpfnJ0B06rMHR8rWBHgooHGfT7vrS', 'AIMAN HAKIM BIN AZIZ ', 'aiman@gmail.com', 9284049384, 'Arau, Perlis', '2024-11-12 19:06:00'),
-(38, 'azyan', '$2y$10$xqjkDZrGsWsDhecSXf2zCu9rNskNrBC9QH6SgsV2pdQhvwHym3HBa', 'AZYAN SORFINA BINTI MUHAMAD FAUZI', 'azyan@gmail.com', 9319392053, 'Kangar, Perlis', '2024-11-14 21:06:09'),
-(39, 'user', '$2y$10$VFVr8Uk4b26a4bnzn4vHueBRJIkyiCwvgErFY102kl75XZTrQ/0CO', 'user', 'user@user', 123456788, '         fksjfnskjfn', '2025-07-05 16:03:44');
+(40, 'ahmad', '$2y$10$hash', 'Ahmad Faizal bin Rahim', 'ahmad@example.com', 601234567001, 'Jalan Bukit Kubu, Perlis', '2025-07-26 02:22:41'),
+(41, 'muhammad', '$2y$10$hash', 'Muhammad Amir bin Zainal', 'muhammad@example.com', 601234567002, 'Taman Melati, Kangar, Perlis', '2025-07-26 02:22:41'),
+(42, 'mohd', '$2y$10$hash', 'Mohd Rizwan bin Ismail', 'mohd@example.com', 601234567003, 'Kampung Titi Tok Bandar, Perlis', '2025-07-26 02:22:41'),
+(43, 'ahmaad', '$2y$10$hash', 'Ahmaad Saiful bin Rahman', 'ahmaad@example.com', 601234567004, 'Jalan Sekolah, Kangar, Perlis', '2025-07-26 02:22:41'),
+(44, 'syafiq', '$2y$10$hash', 'Syafiq bin Hassan', 'syafiq@example.com', 601234567005, 'Taman Sena Indah, Perlis', '2025-07-26 02:22:41'),
+(45, 'hafiz', '$2y$10$hash', 'Hafiz bin Jamal', 'hafiz@example.com', 601234567006, 'Jalan Raja Syed Alwi, Perlis', '2025-07-26 02:22:41'),
+(46, 'fikri', '$2y$10$hash', 'Fikri bin Norazman', 'fikri@example.com', 601234567007, 'Taman Bukit Kayangan, Perlis', '2025-07-26 02:22:41'),
+(47, 'kamal', '$2y$10$hash', 'Kamal bin Mahmud', 'kamal@example.com', 601234567008, 'Jalan 9, Arau, Perlis', '2025-07-26 02:22:41'),
+(48, 'farhan', '$2y$10$hash', 'Farhan bin Rosli', 'farhan@example.com', 601234567009, 'Taman Mutiara, Perlis', '2025-07-26 02:22:41'),
+(49, 'shahrul', '$2y$10$hash', 'Shahrul bin Omar', 'shahrul@example.com', 601234567010, 'Jalan Padang Siding, Perlis', '2025-07-26 02:22:41'),
+(50, 'haziq', '$2y$10$hash', 'Haziq bin Latif', 'haziq@example.com', 601234567011, 'Taman Pertiwi Indah, Perlis', '2025-07-26 02:22:41'),
+(51, 'hakim', '$2y$10$hash', 'Hakim bin Ariffin', 'hakim@example.com', 601234567012, 'Jalan Seriab, Perlis', '2025-07-26 02:22:41'),
+(52, 'zulhilmi', '$2y$10$hash', 'Zulhilmi bin Zahid', 'zulhilmi@example.com', 601234567013, 'Jalan Kuala Perlis, Perlis', '2025-07-26 02:22:41'),
+(53, 'nizam', '$2y$10$hash', 'Nizam bin Mat Isa', 'nizam@example.com', 601234567014, 'Taman Pelangi, Perlis', '2025-07-26 02:22:41'),
+(54, 'hilmi', '$2y$10$hash', 'Hilmi bin Saharuddin', 'hilmi@example.com', 601234567015, 'Jalan Jejawi, Perlis', '2025-07-26 02:22:41'),
+(55, 'arif', '$2y$10$hash', 'Arif bin Nazri', 'arif@example.com', 601234567016, 'Taman Damai, Perlis', '2025-07-26 02:22:41'),
+(56, 'luqman', '$2y$10$hash', 'Luqman bin Yusof', 'luqman@example.com', 601234567017, 'Kampung Titi Serong, Perlis', '2025-07-26 02:22:41'),
+(57, 'rizal', '$2y$10$hash', 'Rizal bin Mokhtar', 'rizal@example.com', 601234567018, 'Jalan Beseri, Perlis', '2025-07-26 02:22:41'),
+(58, 'nashrul', '$2y$10$hash', 'Nashrul bin Salleh', 'nashrul@example.com', 601234567019, 'Taman Wawasan, Perlis', '2025-07-26 02:22:41'),
+(59, 'zafran', '$2y$10$hash', 'Zafran bin Razak', 'zafran@example.com', 601234567020, 'Taman Intan, Perlis', '2025-07-26 02:22:41'),
+(60, 'danial', '$2y$10$hash', 'Danial bin Hamdan', 'danial@example.com', 601234567021, 'Jalan Padang Behor, Perlis', '2025-07-26 02:22:41'),
+(61, 'firdaus', '$2y$10$hash', 'Firdaus bin Johari', 'firdaus@example.com', 601234567022, 'Kampung Titi Tok Bandar, Perlis', '2025-07-26 02:22:41'),
+(62, 'hakimi', '$2y$10$hash', 'Hakimi bin Shahidan', 'hakimi@example.com', 601234567023, 'Jalan Repoh, Perlis', '2025-07-26 02:22:41'),
+(63, 'shah', '$2y$10$hash', 'Shah bin Zulkifli', 'shah@example.com', 601234567024, 'Taman Kemajuan, Perlis', '2025-07-26 02:22:41'),
+(64, 'khalid', '$2y$10$hash', 'Khalid bin Fauzi', 'khalid@example.com', 601234567025, 'Taman Melati, Perlis', '2025-07-26 02:22:41'),
+(65, 'iskandar', '$2y$10$hash', 'Iskandar bin Musa', 'iskandar@example.com', 601234567026, 'Taman Sena, Perlis', '2025-07-26 02:22:41'),
+(66, 'azhar', '$2y$10$hash', 'Azhar bin Bahari', 'azhar@example.com', 601234567027, 'Taman Berlian, Perlis', '2025-07-26 02:22:41'),
+(67, 'aiman', '$2y$10$hash', 'Aiman bin Jamal', 'aiman@example.com', 601234567028, 'Jalan Santan, Perlis', '2025-07-26 02:22:41'),
+(68, 'nazmi', '$2y$10$hash', 'Nazmi bin Syahmi', 'nazmi@example.com', 601234567029, 'Taman Perlis Jaya, Perlis', '2025-07-26 02:22:41'),
+(69, 'saufi', '$2y$10$hash', 'Saufi bin Nordin', 'saufi@example.com', 601234567030, 'Jalan Pauh, Perlis', '2025-07-26 02:22:41'),
+(70, 'amirul', '$2y$10$glZIukC6ku6k/lFIWI/4teOTtxTx0UW1aiPWcSx09r0f968Xut68G', 'Muhammad Amirul Amin Bin Rosehadi', 'amin@gmail.com', 60174725254, 'Kampung Padang Telela, Arau 02600 Perlis.', '2025-07-26 10:30:23'),
+(71, 'rais', '$2y$10$15IGJS5ckyHLhd4R2y2so.nBqSRe313EVokfnUXo6m2ILBpDV2kOu', 'Muhammad Rais Bin Rosdi', 'rais@gmail.com', 60138966602, 'Kg. Mulong, 16010 Kota Bharu, Kelantan         ', '2025-07-26 10:37:28');
 
 --
 -- Indexes for dumped tables
@@ -247,25 +290,25 @@ ALTER TABLE `tbl_category`
 -- AUTO_INCREMENT for table `tbl_order`
 --
 ALTER TABLE `tbl_order`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 
 --
 -- AUTO_INCREMENT for table `tbl_payment`
 --
 ALTER TABLE `tbl_payment`
-  MODIFY `payment_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `payment_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tbl_soil`
 --
 ALTER TABLE `tbl_soil`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

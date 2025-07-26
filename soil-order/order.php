@@ -47,6 +47,10 @@ if(isset($_GET['soil_id'])) {
 
                     <div class="order-label" style="color:white;">Quantity</div>
                     <input type="number" name="qty" class="input-responsive" value="1" required>
+
+                    <!-- Display total payment dynamically -->
+                    <p style="color:white; margin-top:10px;">Total to Pay: RM<span id="totalPay"><?php echo $price; ?></span></p>
+
                 </div>
             </fieldset>
 
@@ -78,8 +82,6 @@ if(isset($_GET['soil_id'])) {
                     </button>
                 </div>
             </fieldset>
-
-
         </form>
 
         <?php
@@ -149,3 +151,15 @@ if(isset($_GET['soil_id'])) {
 <?php include('partials-front/footer.php'); ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Real-time total price update -->
+<script>
+    const qtyInput = document.querySelector('input[name="qty"]');
+    const totalPay = document.getElementById('totalPay');
+    const pricePerUnit = <?php echo $price; ?>;
+
+    qtyInput.addEventListener('input', () => {
+        const qty = parseInt(qtyInput.value) || 0;
+        totalPay.textContent = (qty * pricePerUnit).toFixed(2);
+    });
+</script>

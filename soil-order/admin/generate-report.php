@@ -21,7 +21,10 @@ $sql = "SELECT
             u.customer_name, u.customer_contact
         FROM tbl_order o
         JOIN users u ON o.u_id = u.id
-        WHERE o.status = 'Delivered'
+        WHERE o.status = 'Delivered' 
+            AND MONTH(o.order_date) = MONTH(CURRENT_DATE()) 
+            AND YEAR(o.order_date) = YEAR(CURRENT_DATE())
+
         ORDER BY o.order_date DESC";
 
 $res = mysqli_query($conn, $sql);
