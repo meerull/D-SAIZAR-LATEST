@@ -29,6 +29,8 @@ $sql = "SELECT
 
 $res = mysqli_query($conn, $sql);
 
+$grand_total = 0;
+
 if(mysqli_num_rows($res) > 0) {
     while($row = mysqli_fetch_assoc($res)) {
         echo "<tr>";
@@ -41,7 +43,18 @@ if(mysqli_num_rows($res) > 0) {
         echo "<td>{$row['customer_contact']}</td>";
         echo "<td>{$row['delivery_address']}</td>";
         echo "</tr>";
+
+        // Accumulate grand total
+        $grand_total += $row['total'];
     }
+
+    // Output grand total row
+    echo "<tr>
+            <td colspan='3'><strong>Grand Total (RM)</strong></td>
+            <td><strong>{$grand_total}</strong></td>
+            <td colspan='4'></td>
+          </tr>";
+
 } else {
     echo "<tr><td colspan='8'>No delivered orders found.</td></tr>";
 }

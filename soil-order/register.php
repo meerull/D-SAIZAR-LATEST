@@ -175,16 +175,16 @@
             </div>
             <div class="form-group"> 
                 <label for="username">Phone</label> 
-            <input type="number" required class="form-control" 
-                name="customer_contact" aria-describedby="emailHelp">    
-                
+                <input type="number" required class="form-control" 
+                    name="customer_contact" aria-describedby="emailHelp" value="60">    
+                    
                 <small id="emailHelp" class="form-text text-muted">
-                Please Enter a valid 10 digit mobile number
+                    Please Enter a valid digit mobile number
                 </small> 
-            </div>
-            <label for="address">Address</label> 
+            </div>          
+             
             <div class="form-group">
-               
+            <label for="address">Address</label>   
                 <textarea name="customer_address"
                 class="form-control" required>
          </textarea></div>    
